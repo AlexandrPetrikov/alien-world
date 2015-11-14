@@ -1,0 +1,32 @@
+body{
+	background: #1E1E1E;
+}
+header{
+	color:#C0BFDB;
+	text-align: center;
+	line-height:20px;
+}
+main{
+	margin:0 auto;
+	width:100%;
+	min-width:1330px;
+	text-align:center;
+	height:500px;
+}	
+.work-block{
+	display: inline-block;
+	margin-left:200px;
+	width: 800px;
+	height: 500px;
+	background: #817F7F;
+}
+.control-menu{
+	display: inline-block;
+	float:right;
+	height:200px;
+	width:300px;
+	background: red;
+}
+.control-menu .gb-name{
+	
+}
