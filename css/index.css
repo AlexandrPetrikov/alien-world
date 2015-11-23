@@ -1,32 +1,146 @@
-body{
-	background: #1E1E1E;
+body {
+  background: #1E1E1E;
 }
-header{
-	color:#C0BFDB;
-	text-align: center;
-	line-height:20px;
+header {
+  color: #C0BFDB;
+  text-align: center;
+  line-height: 20px;
 }
-main{
-	margin:0 auto;
-	width:100%;
-	min-width:1330px;
-	text-align:center;
-	height:500px;
-}	
-.work-block{
-	display: inline-block;
-	margin-left:200px;
-	width: 800px;
-	height: 500px;
-	background: #817F7F;
+.tests {
+  background: blue;
+  width: 140px;
 }
-.control-menu{
-	display: inline-block;
-	float:right;
-	height:200px;
-	width:300px;
-	background: red;
+main {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 1330px;
+  text-align: center;
+  height: 500px;
 }
-.control-menu .gb-name{
-	
+main .work-block {
+  display: inline-block;
+  margin-left: 200px;
+  width: 800px;
+  height: 500px;
+  background: #817F7F;
+  border: 7px ridge black;
+}
+main .work-block .identification {
+  background: #000;
+  display: none;
+  width: 400px;
+  margin: 150px auto;
+  border-radius: 5px;
+  transition: 3s;
+}
+main .work-block .identification input[type="text"] {
+  margin-top: 30px;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  color: gray;
+  font-size: 20px;
+  border: 1px solid gray;
+  outline: none;
+}
+main .work-block .identification input[type="submit"] {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 1px solid gray;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+main .work-block .identification ::-webkit-input-placeholder {
+  padding-left: 50px;
+}
+main .control-menu {
+  display: inline-block;
+  float: right;
+  height: 500px;
+  width: 300px;
+  border: 7px solid #020001;
+  background: #241921;
+  overflow: hidden;
+}
+main .control-menu .gb-name {
+  font-family: monospace;
+  letter-spacing: 10px;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  box-shadow: 0 1px 20px red;
+  height: 50px;
+}
+main .control-menu .gb-name p {
+  font-size: 20px;
+  margin-top: 0px;
+  color: #BBC200;
+  padding: 15px 10px;
+}
+main .control-menu .new-game {
+  margin-top: 10px;
+  background: #000;
+  border: 1px solid red;
+  box-shadow: 0 1px 20px red;
+  cursor: pointer;
+  height: 50px;
+}
+main .control-menu .new-game p {
+  font-size: 20px;
+  margin-top: 0px;
+  color: white;
+  padding: 15px 10px;
+}
+main .control-menu .new-game p:hover {
+  color: green;
+}
+main .control-menu .sign-up {
+  opacity: 0.3;
+  margin-top: 10px;
+  background: #000;
+  border: 1px solid red;
+  box-shadow: 0 1px 20px red;
+  cursor: pointer;
+  height: 50px;
+}
+main .control-menu .sign-up p {
+  font-size: 20px;
+  margin-top: 0px;
+  color: white;
+  padding: 15px 10px;
+}
+main .control-menu .sign-in {
+  opacity: 0.3;
+  margin-top: 10px;
+  background: #000;
+  border: 1px solid red;
+  box-shadow: 0 1px 20px red;
+  cursor: pointer;
+  height: 50px;
+}
+main .control-menu .sign-in p {
+  font-size: 20px;
+  margin-top: 0px;
+  color: white;
+  padding: 15px 10px;
+}
+main .control-menu .about-game {
+  margin-top: 10px;
+  background: #000;
+  border: 1px solid red;
+  box-shadow: 0 1px 20px red;
+  cursor: pointer;
+  height: 50px;
+}
+main .control-menu .about-game p {
+  font-size: 20px;
+  margin-top: 0px;
+  color: white;
+  padding: 15px 10px;
+}
+main .control-menu .about-game p:hover {
+  color: green;
 }

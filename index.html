@@ -4,30 +4,31 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	 <link rel="stylesheet/less" href="css/index.less">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
-
-	 
-	<!-- <link rel="stylesheet" href="css/index.css"> -->
-	<!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>	 
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 	
 </head>
 <body>
 	<!-- start header-->
 	<header>
-		<h1>Alien world</h1><br>
-		<small>(c)Alexandr Petrikov</small>
+		<h1>ALIEN WORLD</h1><br>
+		<small>(c)Alexandr Petrikov</small><br>
+		<div class="currentHours">
+			<label id="dateHours">xx</label> :
+			<label id="dateMinutes">xx</label> :
+			<label id="dateSeconds">xx</label>
+		</div>
 		<hr>
 	</header>
 	<!-- end header-->
 
 
 	<!-- start main-->
-	<main><label id="thDate">sss</label>
+	<main>
+
 		<div class="work-block" id="work-block">
-		<p class="tests" id="text1">Lorem ipsum dolor.</p>
-		<p class="tests" id="text2">Lorem ipsum dolor.</p>
-		<p class="tests" id="text3">Lorem ipsum dolor.</p>
-				<form class="identification" id="identification">
+				<form class="identification" id="identification" action="php/names.php">
 					<input type="text" required placeholder="Your name"><br>
 					<input type="submit" value="START">
 				</form>
