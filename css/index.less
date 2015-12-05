@@ -1,11 +1,50 @@
 body{
 	background: #1E1E1E;
 }
+@keyframes blink-even{
+
+	50%{
+		background:#FF1D1D;
+	}
+}
+@keyframes blink-odd{
+
+	50%{
+		background:#17CB17;
+	}
+}
 header{
 	color:#C0BFDB;
 	text-align: center;
 	line-height:20px;
+	.box-toy{
+		background: blue;
+		margin:0;
+		padding:10px;
+		text-align:left;
+		min-width:1330px;
+
+		.toy{
+			display:inline-block;
+			background: rgb(118,200,190);
+			width:40px;
+			height:40px;
+			margin-left: 80px;
+			color:red;
+			text-align:center;
+			border-radius:100%;
+		}
+		.toy:nth-child(even){
+			background:#17CB17;
+			animation:blink-even 2s infinite steps(1,end);
+		}
+		.toy:nth-child(odd){
+			background:#FF1D1D;
+			animation:blink-odd 2s infinite steps(1,end);
+		}
+	}
 }
+
 .tests{
 	background: blue;
 	width:140px;
@@ -19,10 +58,42 @@ main{
 	.work-block{
 		display: inline-block;
 		margin-left:200px;
-		width: 800px;
+		width: 801px;
 		height: 500px;
 		background: #817F7F;
 		border:7px ridge black;
+		position:relative;
+		overflow:hidden;
+		.column-group{
+			background: #6CC3D7;
+			padding-left:1px;
+			.column{
+				display:inline-block;
+				float:left;
+				width:264px;
+				height:100px;
+				border:1px solid black;
+				background: #8EC7C3;
+				margin-top:10px;
+				overflow:hidden;
+				ul{
+					position:relative;
+					left:100px;
+					top:0;
+				
+					li{
+						font-size:50px;
+						line-height:100px;
+						list-style-type:none;
+						position:absolute;
+					}
+				}
+			}
+		}
+		.cost{
+			margin-top: 400px;
+			font-size:30px;
+		}
 		.identification{
 			background: #000;
 			display: none;
@@ -53,9 +124,41 @@ main{
 			::-webkit-input-placeholder{
 				padding-left:50px;
 			}
+		}
+		.info-game{
+			width:800px;
+			height:40px;
+			text-align:left;
+			background: #F2EAEA;
+			display: none;
+		}
+		.game-block{
+			text-align: left;
+			.box{
+				background: #5BBC7C;
+				display:inline-block;
+				width: 160px;
+				height:125px;
+				float:left;
+				text-align: center;
+				line-height:125px;
+				cursor:pointer;
+			}
+			.box2,
+			.box4,
+			.box6,
+			.box8,
+			.box10,
+			.box12,
+			.box14,
+			.box16,
+			.box18,
+			.box20,
+			{
+				background: #9594D3;
+			}
 
 		}
-
 	}
 	.control-menu{
 		display: inline-block;
@@ -81,6 +184,40 @@ main{
 			}
 		}
 		.new-game{
+			margin-top: 10px;
+			background: #000;
+			border:1px solid red;
+			box-shadow:0 1px 20px red;
+			cursor:pointer;
+			height:50px;
+			p{
+				font-size:20px;
+				margin-top: 0px;
+				color:white;
+				padding:15px 10px;
+				&:hover{
+					color:green;
+				}
+			}
+		}
+		.start-game{
+			margin-top: 10px;
+			background: #000;
+			border:1px solid red;
+			box-shadow:0 1px 20px red;
+			cursor:pointer;
+			height:50px;
+			p{
+				font-size:20px;
+				margin-top: 0px;
+				color:white;
+				padding:15px 10px;
+				&:hover{
+					color:green;
+				}
+			}
+		}
+		.stop-auto{
 			margin-top: 10px;
 			background: #000;
 			border:1px solid red;
